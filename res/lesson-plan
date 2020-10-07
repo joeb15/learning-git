@@ -1,0 +1,63 @@
+clone the repo using
+git clone https://github.com/joeb15/learning-git.git
+
+create a branch of your own
+git branch {cp-login}
+
+for example
+git branch jvbanko
+
+check that new branch out
+git checkout {cp-login}
+
+create a basic text file that has your full name in it
+
+for example
+/res/jvbanko contains the text "people.Joe Banko"
+
+add the file to be tracked
+git add /res/{cp-login}
+
+commit the file to git with a message
+git commit -m "This is my name!"
+
+push the file to the git repo
+git push -u origin {cp-login}
+
+now, for the fun part...
+we will be doing some work on the same branch... kindof
+
+we will create a copy of the main branch
+to do this, we will go to the main branch
+git checkout main
+
+then we will copy the main branch
+git branch -C main-{cp-login}
+
+on this branch, we will create the change that we want:
+edit your class and modify the method to do the right thing.
+
+add, then commit this and push to your new branch
+git add
+git commit -m
+git push -u origin main-{cp-login}
+
+now, head to the github page and create a pull request:
+https://github.com/joeb15/learning-git
+
+click on the tab that says pull requests
+
+click new pull request
+
+set the base to main, and the comparison branch to main-{cp-login}
+
+click create pull request, and then write a basic description of what you changed
+make this of the style of our PR templates, this is what Jill and Joe will read before looking at your code.
+
+under the reviewers tab, add Jill and Joe: jipo-calpoly & joeb15
+
+assign Joe, Jill and yourself as Assignees
+
+add the proper labels to the PR (enhancement and maybe documentation if you added it)
+
+Make sure you get the proper approvals before merging your PR into the codebase
