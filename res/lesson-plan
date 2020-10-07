@@ -21,7 +21,21 @@ git add /res/{cp-login}
 commit the file to git with a message
 git commit -m "This is my name!"
 
-push the file to the git repo
+Now, add another line to this file that has a basic Bio about you:
+Maybe "I am a backend dev for the team"
+
+now add and commit this file
+git add, git commit -m
+
+Now, before we push to the repo, we want to squash our changes, meaning combine the two commits into one
+we can do this by interactively rebasing the commits.
+git rebase -i
+
+Then, we will change pick to squash for the second commit
+Then, save the file. This will bring up another editor that you can change the commit message
+Change the commit message to something like "My name and bio"
+
+Now push the file to the git repo
 git push -u origin {cp-login}
 
 now, for the fun part...
