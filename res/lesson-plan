@@ -13,7 +13,7 @@ git checkout {cp-login}
 create a basic text file that has your full name in it
 
 for example
-/res/jvbanko contains the text "people.Joe Banko"
+/res/jvbanko contains the text "Joe Banko"
 
 add the file to be tracked
 git add /res/{cp-login}
