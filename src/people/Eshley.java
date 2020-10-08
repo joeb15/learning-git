@@ -2,6 +2,6 @@ package people;
 
 public class Eshley {
   public static int add(int x, int y) {
-  	return x+y;
+    throw new UnsupportedOperationException("Not yet implemented!");
   }
 }
